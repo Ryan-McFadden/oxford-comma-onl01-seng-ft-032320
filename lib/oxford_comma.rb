@@ -1,10 +1,10 @@
 def oxford_comma(array)
   if array.count == 1 
-    return array 
+    return array.split
   elsif array.count == 2 
-    return array.join("and")
+    return array.split("and")
   else
     array[-1] = "and #{array -1}"
-    return array.join(",")
+    return array.split(",")
   end
 end
